@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <div>
+          <p class="left">Bill</p>
+          <input type="text" name="bill" id="bill" placeholder="₹" value="0" />
+
+          <p class="left">Select Tip %</p>
+          <div class="percent-btn">
+            <button class="percent" value="5">5%</button>
+            <button class="percent" value="10">10%</button>
+            <button class="percent" value="15">15%</button>
+            <button class="percent" value="25">25%</button>
+            <button class="percent" value="50">50%</button>
+            <button class="percent" value="75">75%</button>
+          </div>
+          <p class="left">Number of People</p>
+          <input type="number" min="-" max="+" value="0" id="numberofpeople" />
+          <div id="numberofpeople"></div>
+          <button id="generate-bill">Generate Bill</button>
+        </div>
+
+        <div class="result-container">
+          <div class="result-values">
+            <div>
+              <p>Tip Amount</p>
+              <p class="dull-text">/ person</p>
+              <p>Total</p>
+              <p class="dull-text">/person</p>
+            </div>
+            <div>
+              <h1 class="dull-text">$0.00</h1>
+              <h1 class="dull-text">$0.00</h1>
+            </div>
+          </div>
+
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
