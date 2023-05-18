@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d6c8005763.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="box">
       <div class="container">
         <div>
           <p class="left">Bill</p>
-          <input type="text" name="bill" id="bill" placeholder="₹" value="0" />
+          <label for="bill" id="rupee"> ₹ </label>
+          <input type="text" name="bill" id="bill" placeholder="0" />
 
           <p class="left">Select Tip %</p>
           <div class="percent-btn">
@@ -24,7 +29,12 @@
             <button class="percent" value="75">75%</button>
           </div>
           <p class="left">Number of People</p>
-          <input type="number" min="-" max="+" value="0" id="numberofpeople" />
+          <label for="numberofpeople">
+            <i class="fa-solid fa-user" id="user"></i>
+            <i class="fa fa-plus" aria-hidden="true" id="plus"></i>
+            <i class="fa fa-minus" aria-hidden="true" id="minus"></i>
+          </label>
+          <input type="text" id="numberofpeople" placeholder="0" />
           <div id="numberofpeople"></div>
           <button id="generate-bill">Generate Bill</button>
         </div>

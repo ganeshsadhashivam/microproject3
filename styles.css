@@ -23,6 +23,39 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+#rupee {
+  color: #9c60ff;
+  position: absolute;
+  top: 11em;
+  right: 65em;
+  font-size: larger;
+}
+
+#user {
+  color: #9c60ff;
+  position: absolute;
+  top: 30rem;
+  right: 65em;
+  font-size: larger;
+}
+#plus {
+  color: #9c60ff;
+  position: absolute;
+  top: 29rem;
+  right: 45em;
+  font-size: larger;
+  background: white;
+  padding: 0.5em;
+}
+#minus {
+  color: #9c60ff;
+  position: absolute;
+  top: 29rem;
+  right: 40em;
+  font-size: larger;
+  background: white;
+  padding: 0.5em;
+}
 .container .left {
   margin-left: 1em;
   color: #9c60ff;
@@ -38,7 +71,7 @@ body {
   padding: 1rem;
   margin: 1rem;
   border: none;
-  background: #b4b4b4;
+  background: #e5e7eb;
 }
 
 /* #numberofpeople {
@@ -46,9 +79,20 @@ body {
 
 } */
 
+#numberofpeople::placeholder {
+  position: absolute;
+  color: #9c60ff;
+  top: 1px;
+  right: 3em;
+  background: white;
+  padding: 0.7em;
+}
+
 .container ::placeholder {
   color: #9c60ff;
   font-size: large;
+  position: absolute;
+  right: 1em;
   /* display: flex;
   justify-content: space-between;
   flex-direction: row; */
